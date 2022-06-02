@@ -9,7 +9,7 @@ from CRISCO.generate_scenario.generate_behavior_trajectory import *
 
 import json
 
-def reproduce_scenarios(road_type, file_name):
+def reproduce_scenarios(file_name):
     # connect to simulator
     sim = connect_svl()
 
@@ -20,11 +20,11 @@ def reproduce_scenarios(road_type, file_name):
         sim.load(lgsvl.wise.DefaultAssets.map_sanfrancisco)
 
     root_path = os.path.abspath(os.path.dirname(__file__)).split('CRISCO')[0]
-    scenario_record = os.path.join(root_path, "CRISCO/safety_violation_scenarios/" + road_type + "/" + file_name)
+    scenario_record = os.path.join(root_path, "CRISCO/safety_violation_scenarios/" + file_name)
     f = open(scenario_record, encoding='utf-8')
     scenario_json = json.load(f)
     f.close()
-    define_road_traffic_signal_svl(sim, get_traffic_signal(), scenario_json["road_type"])
+    # define_road_traffic_signal_svl(sim, get_traffic_signal(), scenario_json["road_type"])
 
     # define environment parameter
     weather = scenario_json["environment"]
@@ -53,9 +53,8 @@ def reproduce_scenarios(road_type, file_name):
     print("finish reproducing scenario")
 
 if __name__ == '__main__':
-    road_type = "freeway"
     file_name = "safety_violation0"
-    reproduce_scenarios(road_type, file_name)
+    reproduce_scenarios(file_name)
 
 
 

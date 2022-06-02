@@ -137,10 +137,10 @@ def record_scenario():
     f = open(scenario_example, encoding='utf-8')
     scenario_json = json.load(f)
     f.close()
-    scenario_folder = os.path.join(root_path, "CRISCO/safety_violation_scenarios/" + road)
+    scenario_folder = os.path.join(root_path, "CRISCO/safety_violation_scenarios/")
     file_nums = visitDir(scenario_folder)
     scenario_record = os.path.join(root_path,
-                                   "CRISCO/safety_violation_scenarios/" + road + "/safety_violation" + str(file_nums))
+                                   "CRISCO/safety_violation_scenarios/safety_violation" + str(file_nums))
     
     scenario_json["Ego"] = ego_trajectory
 
