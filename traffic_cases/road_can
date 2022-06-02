@@ -1,0 +1,10 @@
+{
+"signal_position": [[37.7, 10, -12.7]],
+"freeway": [[-88, -135]],
+"freeway_accident-prone": [[8.9, 12], [-43.9, -38.8]],
+"urban": [[-88, -135]],
+"urban_accident-prone": [[43.3, 46.9], [-7, -3.4]],
+"intersection": [[8.6, -43.8], [2.3, -11.7], [41.9, -8.8], [36.7, -43.8]],
+"intersection_accident-prone": [[38.2, 42.5], [-49.1, -45.1]],
+"ego_next_lane": [19.1, -34]
+}
