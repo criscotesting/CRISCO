@@ -38,14 +38,5 @@ Website of Apollo: https://apollo.auto/
 Installation of Apollo 6.0: https://www.svlsimulator.com/docs/system-under-test/apollo6-0-instructions/
 
 # Run
-To generate a set of concrete scenarios of one abstract scenario, execute the main() of generate_test_scenarios.py in generation_scenario directory; to stop the running, please press Ctrl+C until the program exits.
-
 To replay the recorded safety-violation scenarios, execute the main() of reproduce_scenario.py in reproduce_safety_violation_scenarios directory(input scenario record file name)
-
-# Customize Influential Factors
-Environment: Environment file in UserDefined directory
-
-Behavior Patterns: BehaviorPatterns file in UserDefined directory
-
-Accident-prone Area: RoadDistrict file in UserDefined directory
 
