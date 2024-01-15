@@ -1,0 +1,4 @@
+{
+"view_factors": ["heavy rain", "fog", "night", "twilight"],
+"ground_factors": ["heavy rain", "snow"]
+}
